@@ -38,3 +38,17 @@ body {
 h1 {
     text-align: center;
 }
+
+.left-right-divider {  display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "divider_left divider_right";
+  }
+  
+  .divider_left { grid-area: divider_left; }
+  
+  .divider_right { grid-area: divider_right; }
+  
