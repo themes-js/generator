@@ -48,7 +48,7 @@ h1 {
 }
 
 #generator_container {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,9 +59,9 @@ h1 {
 .theme_container {
     background: var(--nav-background-color);
     color: var(--nav-text-color);
-    padding: 10px 20px;
+    padding: 10px 2rem;
     border-radius: 5px;
-    width: 80%;
+    width: calc(100% - 4rem);
     height: 80%;
     margin-bottom: 0.5rem;
     text-align: center;
