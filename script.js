@@ -6,7 +6,7 @@ var max_number_of_themes = 5;
 // 
 // Variables
 // 
-var number_of_themes = 2;
+var number_of_themes = 1;
 
 // 
 // Main
