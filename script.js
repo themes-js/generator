@@ -41,3 +41,11 @@ function addTheme() {
         number_of_themes++;
     }
 }
+
+// Function: Remove Theme
+function removeTheme(theme_number) {
+    // Remove the theme container
+    document.getElementById("theme_container_" + theme_number).remove();
+    // Increase the max number of themes
+    max_number_of_themes++;
+}
