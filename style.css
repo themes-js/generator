@@ -67,6 +67,15 @@ h1 {
     text-align: center;
 }
 
+.theme_delete_button {
+    background-color: #ee0011;
+    color: #ffffff;
+    position: relative;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
 #addTheme {
     width: 100%;
     display: flex;
