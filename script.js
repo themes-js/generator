@@ -49,3 +49,8 @@ function removeTheme(theme_number) {
     // Increase the max number of themes
     max_number_of_themes++;
 }
+
+// Function: Generator
+function generate(minify) {
+
+}
