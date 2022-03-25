@@ -39,16 +39,32 @@ h1 {
     text-align: center;
 }
 
-.left-right-divider {  display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "divider_left divider_right";
-  }
-  
-  .divider_left { grid-area: divider_left; }
-  
-  .divider_right { grid-area: divider_right; }
-  
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme_container {
+    width: 80%;
+}
+
+#addTheme {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+
+
+#addThemeButton {
+    background: var(--nav-background-color);
+    color: var(--nav-text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+}
