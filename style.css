@@ -47,8 +47,24 @@ h1 {
     align-items: center;
 }
 
+#generator_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .theme_container {
+    background: var(--nav-background-color);
+    color: var(--nav-text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
     width: 80%;
+    height: 80%;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 #addTheme {
