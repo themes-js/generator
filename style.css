@@ -84,6 +84,28 @@ h1 {
     display: none;
 }
 
+.main_left_right_divider {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 75%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "over_text over_text" "main_divider_left main_divider_right";
+}
+
+.main_divider_left {
+    grid-area: main_divider_left;
+}
+
+.main_divider_right {
+    grid-area: main_divider_right;
+}
+
+.over_text {
+    grid-area: over_text;
+}
+
 
 /* Button to add new theme */
 
