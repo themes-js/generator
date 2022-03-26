@@ -4,6 +4,11 @@
 var list_of_themes = [];
 
 // 
+// Functions
+//
+
+
+// 
 // The generator
 // 
 function generate(minify) {
