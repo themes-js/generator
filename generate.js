@@ -98,7 +98,7 @@ function generate(minify) {
     theme_js_file += "    // Add 1 to the current theme\n";
     theme_js_file += "    current_theme++;\n";
     theme_js_file += "    // If the current theme is greater than the number of themes, set it to 0\n";
-    theme_js_file += "    if (current_theme > number_of_themes - 1) {\n";
+    theme_js_file += "    if (current_theme > number_of_themes) {\n";
     theme_js_file += "        current_theme = 0;\n";
     theme_js_file += "    }\n";
     theme_js_file += "    // Change the theme\n";
