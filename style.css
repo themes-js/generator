@@ -140,6 +140,7 @@ h1 {
     grid-template-areas: "divider_left divider_right";
     text-align: center;
     margin-top: 0.5rem;
+    margin-bottom: 5rem;
 }
 
 .generator_divider_left {
