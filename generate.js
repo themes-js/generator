@@ -48,7 +48,19 @@ function generate(minify) {
 
     // Make a File out of the list of themes
 
+
     // Create a download request to the browser
+    var download_request = new XMLHttpRequest();
+    download_request.open("GET", "data:text/javascript;charset=utf-8," + encodeURIComponent(theme_js_file), true);
+    download_request.responseType = "blob";
+    download_request.onload = function() {
+        var blob = new Blob([this.response], { type: "text/javascript" });
+        var link = document.createElement("a");
+        link.href = window.URL.createObjectURL(blob);
+        link.download = "themes.js";
+        link.click();
+    };
+    download_request.send();
 
     // Minify the file if the user wants to
     if (minify) {}
