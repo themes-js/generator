@@ -6,7 +6,7 @@
 // 
 
 // Navigation - Hintergrund
-ThemeDarkNavBackground = "#111111";
+ThemeDarkNavBackground = "#202020";
 ThemeLightNavBackground = "#ffffff";
 
 // Navigation - Text
