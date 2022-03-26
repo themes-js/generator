@@ -78,6 +78,13 @@ h1 {
 }
 
 
+/* The empty theme container */
+
+#empty_theme_container {
+    display: none;
+}
+
+
 /* Button to add new theme */
 
 #addTheme {
