@@ -3,6 +3,7 @@
 //
 var list_of_themes = [];
 var theme_js_file;
+var file_name = "themes.js";
 
 // 
 // Functions
@@ -106,6 +107,16 @@ function generate(minify) {
     theme_js_file += "    localStorage.setItem('theme', current_theme);\n";
     theme_js_file += "}\n";
 
+    // Minify the file if the user wants to
+    if (minify) {
+        // Remove all the comments (everything between // and \n)
+        theme_js_file = theme_js_file.replace(/\/\/.*\n/g, "");
+        // Remove all the line breaks
+        theme_js_file = theme_js_file.replace(/\n/g, '');
+        // Rewrite file name
+        file_name = "themesjs.min.js";
+    }
+
     // Create a download request to the browser
     var download_request = new XMLHttpRequest();
     download_request.open("GET", "data:text/javascript;charset=utf-8," + encodeURIComponent(theme_js_file), true);
@@ -114,13 +125,10 @@ function generate(minify) {
         var blob = new Blob([this.response], { type: "text/javascript" });
         var link = document.createElement("a");
         link.href = window.URL.createObjectURL(blob);
-        link.download = "themes.js";
+        link.download = file_name;
         link.click();
     };
     download_request.send();
-
-    // Minify the file if the user wants to
-    if (minify) {}
 
     // Clear the list of themes variable
     list_of_themes = [];
